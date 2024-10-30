@@ -1,136 +1,117 @@
-﻿
-body {
-    background-image: url('Images/truck.jpeg'); /* Adjust the path */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent tiling */
-}
-
-body {
+﻿/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Basic styles */
+/* Body Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background for a sleek look */
+    color: #e0e0e0; /* Light text color for contrast */
     line-height: 1.6;
+    padding: 1em;
 }
 
-/* Header styles */
-header {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    padding: 1em 0;
-    text-align: center;
-    border-bottom: 2px solid #ff7e5f;
+/* Header and Banner Styles */
+header .banner {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #007bff, #00c6ff); /* Cool blue gradient */
+    color: white;
+    padding: 20px;
+    text-align: left;
 }
 
-    header h1 {
-        font-size: 2.5em;
-        margin: 0.2em 0;
+    header .banner .logo {
+        max-width: 60px;
+        margin-right: 15px;
     }
 
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* Navigation Bar */
 nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
-    padding: 0;
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
     nav ul li {
-        display: inline;
-        margin: 0 15px;
+        margin: 0 10px;
     }
 
         nav ul li a {
-            color: #f2f2f2;
+            color: #00c6ff; /* Bright accent color */
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s;
+            padding: 8px 15px;
+            transition: background 0.3s, color 0.3s;
         }
 
             nav ul li a:hover {
-                color: #ff7e5f;
+                background-color: #00c6ff;
+                color: #121212; /* Contrast on hover */
+                border-radius: 5px;
             }
 
-/* Main content styles */
+/* Main Content Styling */
 main {
-    padding: 2em;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: 3em;
-}
-
-    section h2 {
-        border-bottom: 2px solid #ff7e5f;
-        padding-bottom: 0.3em;
-        margin-bottom: 1em;
-        color: #feb47b;
-    }
-
-/* Card styles */
-.card {
-    background: #333;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e2e; /* Darker content background */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 1.5em;
-    margin-bottom: 2em;
-    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Deeper shadow for depth */
 }
 
-    .card:hover {
-        transform: translateY(-10px);
-    }
-
-    .card h3 {
-        margin-top: 0;
-        color: #ff7e5f;
-    }
-
-/* Button styles */
-button {
-    background: #ff7e5f;
-    color: #fff;
-    border: none;
-    padding: 0.75em 1.5em;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background 0.3s;
+.intro h2 {
+    color: #00c6ff; /* Accent color */
+    margin-bottom: 10px;
 }
 
-    button:hover {
-        background: #feb47b;
+.intro ul {
+    list-style: disc inside;
+    margin-left: 20px;
+    color: #bbb;
+}
+
+    .intro p, .intro ul li {
+        margin-bottom: 10px;
     }
 
-/* Footer styles */
+/* Footer Styling */
 footer {
     text-align: center;
-    padding: 1em 0;
-    background: #333;
-    color: #f2f2f2;
-    border-top: 2px solid #ff7e5f;
+    padding: 10px;
+    background-color: #292b2c;
+    color: #e0e0e0;
+    font-size: 0.9rem;
     position: fixed;
     bottom: 0;
     width: 100%;
+    border-top: 2px solid #00c6ff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* Bottom Right Image Styling */
+.bottom-right-image {
+    position: fixed; /* Fixes the image to a specific position in the viewport */
+    bottom: 10px; /* Adjusts the position from the bottom */
+    right: 10px; /* Adjusts the position from the right */
+    width: 150px; /* Sets the width of the image */
+    height: auto; /* Maintains the aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Deeper shadow for effect */
+    border-radius: 8px; /* Adds rounded corners */
 }
-
-
-
-
